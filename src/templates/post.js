@@ -62,6 +62,7 @@ export const postQuery = graphql`
       id
       html
       frontmatter {
+        category
         title
         path
         date
