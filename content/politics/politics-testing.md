@@ -7,3 +7,5 @@ description: This is a description.
 ## Pickles sneezed!
 
 Oh my god!
+
+![Trump](/img/imrs-2.jpg "Trump-o")
