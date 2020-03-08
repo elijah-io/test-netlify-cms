@@ -1,4 +1,5 @@
 const path = require('path');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({actions, graphql}) => {
     const {createPage} = actions;
@@ -12,6 +13,21 @@ exports.createPages = ({actions, graphql}) => {
                     id
                     frontmatter {
                         path
+                        featuredImage {
+                            childImageSharp {
+                                fluid(maxWidth: 2400) {
+                                    src
+                                    base64
+                                    tracedSVG
+                                    srcWebp
+                                    srcSetWebp
+                                    originalImg
+                                    originalName
+                                    presentationWidth
+                                    presentationHeight
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -29,3 +45,7 @@ exports.createPages = ({actions, graphql}) => {
         })
     })
 }
+
+exports.onCreateNode = ({ node }) => {
+    fmImagesToRelative(node);
+  };

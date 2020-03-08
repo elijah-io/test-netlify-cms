@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/img`,
       },
     },
     {
@@ -28,7 +28,20 @@ module.exports = {
         name: 'politics',
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+          plugins: [
+            'gatsby-remark-relative-images',
+            {
+                resolve: `gatsby-remark-images`,
+                options: {
+                    maxWidth: 1200,
+                },
+            },
+          ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
