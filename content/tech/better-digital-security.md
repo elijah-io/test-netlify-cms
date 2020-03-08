@@ -1,6 +1,7 @@
 ---
 title: 3 Steps for Better Digital Security in 2017
-path: /better-digital-security
+category: tech
+path: better-digital-security
 date: 2017-05-07T17:00:00.000Z
 excerpt: Last year’s digital security mishaps brought privacy to the forefront of our
   attention. Ironically, some of the most notable digital security unravellings

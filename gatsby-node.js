@@ -12,7 +12,9 @@ exports.createPages = ({actions, graphql}) => {
                 node {
                     id
                     frontmatter {
+                        category
                         path
+                        title
                         featuredImage {
                             childImageSharp {
                                 fluid(maxWidth: 2400) {
@@ -40,6 +42,7 @@ exports.createPages = ({actions, graphql}) => {
         res.data.allMarkdownRemark.edges.forEach(({node}) => {
             createPage({
                 path: node.frontmatter.path,
+                // matchPath: node.frontmatter.path,
                 component: postTemplate
             })
         })

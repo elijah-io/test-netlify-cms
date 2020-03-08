@@ -1,6 +1,7 @@
 ---
 title: Test Post
-path: /test-post
+category: politics
+path: test-post
 date: 2017-05-07T17:00:00.000Z
 excerpt: This is just a test post.
 featuredImage: /img/imrs-2.jpg
