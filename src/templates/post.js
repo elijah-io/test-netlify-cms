@@ -11,7 +11,7 @@ export default function Template({data}) {
             <div className="post">
                 <div
                     style={{
-                    //   background: `linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(${post.featuredImage.imageFile.childImageSharp.fluid.src})`,
+                      background: `linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(${post.frontmatter.featured_image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     }}
@@ -62,6 +62,7 @@ export const postQuery = graphql`
                 path
                 title
                 date
+                featured_image
             }
         }
     }
