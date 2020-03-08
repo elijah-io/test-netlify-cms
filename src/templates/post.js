@@ -3,11 +3,20 @@ import { graphql } from "gatsby"
 import moment from "moment/moment"
 // import Helmet from 'react-helmet';
 import Layout from "../components/layout.js"
+import Helmet from "react-helmet"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
     <Layout>
+      <Helmet title={`${post.frontmatter.title} – Elijah Kleinsmith`}>
+        <meta name="description" content={post.frontmatter.excerpt} />
+        <meta property="og:image" content={post.frontmatter.featuredImage.childImageSharp.fluid.src} />
+        <meta property="og:title" content={post.frontmatter.title} />
+        <meta property="og:description" content={post.frontmatter.excerpt} />
+        <meta name="twitter:title" content={post.frontmatter.title} />
+        <meta name="twitter:card" contet="summary_large_image" />
+      </Helmet>
       <div className="post">
         <div
           style={{
