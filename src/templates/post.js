@@ -10,6 +10,8 @@ export default function Template({ data }) {
   return (
     <Layout>
       <Helmet title={`${post.frontmatter.title} – Elijah Kleinsmith`}>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://elijah.io" />
         <meta name="description" content={post.frontmatter.excerpt} />
         <meta property="og:image" content={post.frontmatter.featuredImage.childImageSharp.fluid.src} />
         <meta property="og:image:height" content={post.frontmatter.featuredImage.childImageSharp.fluid.presentationHeight} />
