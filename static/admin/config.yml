@@ -8,14 +8,15 @@ public_folder: /img
 collections:
   - name: "politics"
     label: "Politics"
-    folder: "content/politics"
+    folder: "content"
     create: true
     slug: "{{path}}"
     editor:
      preview: false
+    filter: {field: "category", value: "politics"}
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["politics", "tech"] }
       - { label: "Path", name: "path", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
@@ -24,14 +25,15 @@ collections:
 
   - name: "tech"
     label: "Technology"
-    folder: "content/tech"
+    folder: "content"
     create: true
     slug: "{{path}}"
     editor:
      preview: false
+    filter: {field: "category", value: "tech"}
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["politics", "tech"] }
       - { label: "Path", name: "path", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }

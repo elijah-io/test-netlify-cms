@@ -17,15 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/tech`,
+        path: `${__dirname}/content`,
         name: 'tech',
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/politics`,
-        name: 'politics',
       }
     },
     {
