@@ -16,9 +16,9 @@ export const query = graphql`
         node {
           id
           frontmatter {
-            path
             title
-            description
+            path
+            excerpt
           }
           html
         }
@@ -36,14 +36,18 @@ export default ({ data }) => (
           <h1 style={{fontStyle: 'italic'}}>Elijah Kleinsmith</h1>
           <p>Testing a sentence or two here. Okay, just one. Wait.</p>
           <h2>Posts</h2>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={node.id}>
-              <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
-                <div dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
-              </AniLink>
-              <div dangerouslySetInnerHTML={{ __html: node.description }} />
+          <div className="container">
+            <div className="row">
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <div className="col-lg-4" key={node.id}>
+                  <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
+                    <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
+                    <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} />
+                  </AniLink>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>

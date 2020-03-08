@@ -56,12 +56,13 @@ export default function Template({data}) {
 export const postQuery = graphql`
     query PostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
-            html
             id
+            html
             frontmatter {
-                path
                 title
+                path
                 date
+                excerpt
                 featured_image
             }
         }

@@ -34,6 +34,23 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'pgi1lzk'
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        color: '#EE4E31',
+        height: '3px',
+        paths: ['/**'],
+        zIndex: `2`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
