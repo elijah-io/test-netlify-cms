@@ -12,6 +12,8 @@ export default function Template({ data }) {
       <Helmet title={`${post.frontmatter.title} – Elijah Kleinsmith`}>
         <meta name="description" content={post.frontmatter.excerpt} />
         <meta property="og:image" content={post.frontmatter.featuredImage.childImageSharp.fluid.src} />
+        <meta property="og:image:height" content={post.frontmatter.featuredImage.childImageSharp.fluid.presentationHeight} />
+        <meta property="og:image:width" content={post.frontmatter.featuredImage.childImageSharp.fluid.presentationWidth} />
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.frontmatter.excerpt} />
         <meta name="twitter:title" content={post.frontmatter.title} />
@@ -80,12 +82,7 @@ export const postQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2400) {
               src
-              base64
-              tracedSVG
               srcWebp
-              srcSetWebp
-              originalImg
-              originalName
               presentationWidth
               presentationHeight
             }
