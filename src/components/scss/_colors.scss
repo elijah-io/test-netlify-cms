@@ -1,0 +1,51 @@
+:root {
+  --richdark: #04151F;
+  --gainsboro: #EADEDA;
+  --carminepink: #EE4E31;
+}
+// This Color Scheme: https://coolors.co/04151f-595959-7f7f7f-eadeda-ee4e31
+// Alternative Color Scheme: https://coolors.co/809bce-95b8d1-b8e0d2-d6eadf-eac4d5
+
+$dark: var(--richdark);
+$light: var(--gainsboro);
+$brand: var(--carminepink);
+
+.gold {
+  background-color: $brand;
+}
+
+.gold-text {
+  color: $brand;
+}
+
+.dark {
+  background-color: $dark;
+}
+
+.dark-text {
+  color: $dark;
+}
+
+.light {
+  background-color: $light;
+}
+
+.light-text {
+  color: $light;
+}
+
+.dark {
+  background-color: $dark;
+}
+
+.dark-text {
+  color: $dark;
+}
+
+.white {
+  background-color: $light;
+}
+
+.white-text {
+  color: $light;
+}
