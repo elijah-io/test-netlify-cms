@@ -7,12 +7,14 @@ import Helmet from "react-helmet"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
+  const { site: global } = data
   return (
     <Layout>
       <Helmet title={`${post.frontmatter.title} – Elijah Kleinsmith`}>
+        <meta property="og:url" content={`${global.siteMetadata.url}${post.frontmatter.path}`} />
         <meta property="og:type" content="website" />
         <meta name="description" content={post.frontmatter.excerpt} />
-        <meta property="og:image" content={post.frontmatter.featuredImage.childImageSharp.fluid.src} />
+        <meta property="og:image" content={`${global.siteMetadata.url}${post.frontmatter.featuredImage.childImageSharp.fluid.src}`} />
         <meta property="og:image:height" content={post.frontmatter.featuredImage.childImageSharp.fluid.presentationHeight} />
         <meta property="og:image:width" content={post.frontmatter.featuredImage.childImageSharp.fluid.presentationWidth} />
         <meta property="og:title" content={post.frontmatter.title} />
@@ -89,6 +91,11 @@ export const postQuery = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        url
       }
     }
   }

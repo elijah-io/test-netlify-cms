@@ -29,6 +29,11 @@ exports.createPages = ({actions, graphql}) => {
                 }
             }
         }
+        site {
+            siteMetadata {
+                url
+            }
+        }
     }`)
     .then(res => {
         if(res.errors) {
