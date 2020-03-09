@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -16,10 +17,25 @@ export const query = graphql`
         node {
           id
           frontmatter {
-            title
             category
+            title
             path
+            date
             excerpt
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 2400) {
+                  base64
+                  tracedSVG
+                  srcWebp
+                  srcSetWebp
+                  originalImg
+                  originalName
+                  presentationWidth
+                  presentationHeight
+                }
+              }
+            }
           }
           html
         }
@@ -40,8 +56,12 @@ export default ({ data }) => (
           <div className="container">
             <div className="row">
               {data.allMarkdownRemark.edges.map(({ node }) => (
-                <div className="col-lg-4" key={node.id}>
+                <div className="col-lg-4 col-md-4" key={node.id}>
                   <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
+                    <Img
+                      fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                      style={{height: `100px`}}
+                    />
                     <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
                     <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} />
                   </AniLink>

@@ -54,7 +54,7 @@ module.exports = {
       options: {
         color: '#EE4E31',
         height: '3px',
-        paths: ['/**'],
+        paths: ['/politics/*', '/tech/*'],
         zIndex: `2`,
       },
     },
