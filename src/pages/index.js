@@ -52,24 +52,25 @@ export default ({ data }) => (
         <div className="col-12">
           <h1 style={{fontStyle: 'italic'}}>Elijah Kleinsmith</h1>
           <p>Testing a sentence or two here. Okay, just one. Wait.</p>
-          <h2>Posts</h2>
-          <div className="container">
-            <div className="row">
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <div className="col-lg-4 col-md-4" key={node.id}>
-                  <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
-                    <Img
-                      fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-                      style={{height: `100px`}}
-                    />
-                    <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
-                    <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} />
-                  </AniLink>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
+    <div className="container blogroll">
+      <h2>Latest</h2>
+      <div className="row">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div className="col-lg-4 col-md-6" key={node.id}>
+            <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
+              <Img
+                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                className="thumbnail"
+                style={{height: '200px'}}
+              />
+              <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} />
+            </AniLink>
+          </div>
+        ))}
       </div>
     </div>
   </Layout>

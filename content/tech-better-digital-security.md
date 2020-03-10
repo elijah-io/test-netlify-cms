@@ -4,8 +4,8 @@ category: tech
 path: /tech/better-digital-security
 date: 2017-05-07T17:00:00.000Z
 excerpt: Last year’s digital security mishaps brought privacy to the forefront of our
-  attention. Ironically, some of the most notable digital security unravellings
-  of 2016 could have been mitigated by following basic privacy practices.
+  attention. Some of the most notable digital security unravellings
+  could have been mitigated by following basic privacy practices.
 featuredImage: /img/cyberspace.jpg
 ---
 Last year’s digital security mishaps brought privacy to the forefront of our attention. Ironically, some of the most notable digital security unravellings of 2016 could have been mitigated by following basic privacy practices.

@@ -48,6 +48,29 @@ a {
   cursor: none;
 }
 
+.blogroll {
+  a {
+    text-decoration: none;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-top: 0px;
+  }
+  // @media (min-width: $M) {
+  //   .thumbnail {
+  //     height: 200px;
+  //   }
+  // }
+  // @media (max-width: $M) {
+  //   .thumbnail {
+  //     height: 200px;
+  //   }
+  // }
+}
+
 @media (min-width: $M) {
   .mobile-menu {
     display: none !important;

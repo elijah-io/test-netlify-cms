@@ -20,6 +20,12 @@ exports.createPages = ({actions, graphql}) => {
                                 fluid(maxWidth: 2400) {
                                     src
                                     srcWebp
+                                    base64
+                                    tracedSVG
+                                    srcWebp
+                                    srcSetWebp
+                                    originalImg
+                                    originalName
                                     presentationWidth
                                     presentationHeight
                                 }
