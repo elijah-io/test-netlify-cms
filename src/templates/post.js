@@ -54,7 +54,7 @@ export default function Template({ data }) {
         >
           <div className="row">
             <div className="col-12" style={{ maxWidth: 650, margin: "0 auto" }}>
-              <p
+              <div
                 dangerouslySetInnerHTML={{ __html: post.html }}
                 style={{
                   lineHeight: 1.5,
