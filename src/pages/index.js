@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 // import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 // https://transitionlink.tylerbarnes.ca/docs/anilink/
+import { FaRegClock, FaRegFolder } from 'react-icons/fa';
 
 export const query = graphql`
   query HomePage {
@@ -16,6 +17,7 @@ export const query = graphql`
       edges {
         node {
           id
+          timeToRead
           frontmatter {
             category
             title
@@ -67,7 +69,9 @@ export default ({ data }) => (
                 style={{height: '200px'}}
               />
               <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} style={{marginBottom: 6}} />
+              <small><FaRegClock style={{verticalAlign: 'text-top', paddingTop: 1}} /> {node.timeToRead} Minute Read
+              • <FaRegFolder style={{verticalAlign: 'text-top', paddingTop: 1}} /> {node.frontmatter.category}</small>
             </AniLink>
           </div>
         ))}

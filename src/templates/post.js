@@ -75,6 +75,7 @@ export const postQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
+      timeToRead
       frontmatter {
         category
         title

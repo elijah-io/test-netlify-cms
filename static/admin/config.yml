@@ -15,10 +15,10 @@ collections:
     slug: "{{path}}"
     editor:
      preview: false
-    filter: {field: "category", value: "politics"}
+    filter: {field: "category", value: "Politics"}
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["politics", "tech"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Politics", "Technology"] }
       - { label: "Path", name: "path", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
@@ -32,10 +32,10 @@ collections:
     slug: "{{path}}"
     editor:
      preview: false
-    filter: {field: "category", value: "tech"}
+    filter: {field: "category", value: "Technology"}
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["politics", "tech"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Politics", "Technology"] }
       - { label: "Path", name: "path", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
