@@ -5,7 +5,9 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import IndexHero from "../components/hero"
 
+import Particles from "react-particles-js";
 // import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 // https://transitionlink.tylerbarnes.ca/docs/anilink/
@@ -27,16 +29,10 @@ export const query = graphql`
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 2400) {
-                  base64
-                  tracedSVG
-                  srcWebp
-                  srcSetWebp
-                  originalImg
-                  originalName
-                  presentationWidth
-                  presentationHeight
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
+            id
             }
           }
           html
@@ -48,15 +44,24 @@ export const query = graphql`
 
 export default ({ data }) => (
   <Layout>
+    <Particles
+      params={{
+        particles: {
+          color: {
+          value: "#c8008c"
+          },
+          number: {
+              value: 75
+          }
+        }
+        }}
+        style={{
+          position: 'fixed',
+          zIndex: 0,
+        }}
+    />
     <SEO title="Home" />
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <h1 style={{fontStyle: 'italic'}}>Elijah Kleinsmith</h1>
-          <p>Testing a sentence or two here. Okay, just one. Wait.</p>
-        </div>
-      </div>
-    </div>
+    <IndexHero />
     <div className="container blogroll">
       <h2>Latest</h2>
       <div className="row">
@@ -64,14 +69,15 @@ export default ({ data }) => (
           <div className="col-lg-4 col-md-6" key={node.id}>
             <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
               <Img
+                key={node.frontmatter.featuredImage.id}
                 fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
                 className="thumbnail"
                 style={{height: '200px'}}
               />
-              <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} />
-              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} style={{marginBottom: 6}} />
+              <h3 dangerouslySetInnerHTML={{ __html: node.frontmatter.title }} className="sans" style={{fontWeight: 700}} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt }} style={{marginBottom: 10}} />
               <small><FaRegClock style={{verticalAlign: 'text-top', paddingTop: 1}} /> {node.timeToRead} Minute Read
-              • <FaRegFolder style={{verticalAlign: 'text-top', paddingTop: 1}} /> {node.frontmatter.category}</small>
+              &nbsp;<FaRegFolder style={{verticalAlign: 'text-top', paddingTop: 1}} /> {node.frontmatter.category}</small>
             </AniLink>
           </div>
         ))}

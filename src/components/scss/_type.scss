@@ -1,7 +1,8 @@
 @import "_colors.scss";
 
-$sans: "p22-underground", sans-serif; // 400 Book • 600 DemiBold
-$display: "miller-display", serif; // 400 Roman • 400 Italic
+$sans: "San Francisco", "halyard-display", "Helvetica Neue", "Lucida Grande", serif; // 400 Regular + Italic & 700 Bold + Italic
+$display: "miller-display", serif; // 300 Roman + Italic
+$special: "SF Mono", "Source Code Pro", sans-serif;
 
 .sans {
   font-family: $sans;
@@ -11,9 +12,14 @@ $display: "miller-display", serif; // 400 Roman • 400 Italic
 .display {
   font-family: $display;
   letter-spacing: 1;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
+
+.special {
+  font-family: $special;
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: $display;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   margin-bottom: 1rem;
   color: $light;

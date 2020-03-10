@@ -46,6 +46,9 @@ module.exports = {
       options: {
         typekit: {
           id: 'pgi1lzk'
+        },
+        google: {
+          families: ['Source Code Pro']
         }
       }
     },
