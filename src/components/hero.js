@@ -9,7 +9,7 @@ const IndexHero = () => (
   <footer>
     <div className="container">
         <div className="row" style={{height: '77vh'}}>
-            <div className="col-md-10 col-s-12 my-auto" style={{margin: '0 auto'}}>
+            <div className="col-md-12 col-s-12 my-auto" style={{margin: '0 auto'}}>
                 <p className="special" style={{color: '#EE4E31',}}>Hi, my name is</p>
                 <h1 style={{fontStyle: 'italic', marginTop: 0}}>Elijah Kleinsmith</h1>
                 {/* <hr style={{maxWidth: 475, margin: 0}}/> */}
@@ -18,19 +18,23 @@ const IndexHero = () => (
                 specializing in building and supporting exceptional,
                 high-quality websites and immersive digital experiences.
                 </p>
-                <button
-                    className="special"
-                    style={{
-                        padding: '12px 30px',
-                        fontSize: 14,
-                        backgroundColor: 'transparent',
-                        color: '#EE4E31',
-                        borderColor: '#EE4E31',
-                        textTransform: 'uppercase',
-                    }}
-                >
-                    Get In Touch
-                </button>
+                <a href="mailto:hi@elijah.io">
+                    <button
+                        className="special"
+                        style={{
+                            padding: '12px 30px',
+                            fontSize: 14,
+                            backgroundColor: 'transparent',
+                            color: '#EE4E31',
+                            borderColor: '#EE4E31',
+                            textTransform: 'uppercase',
+                            border: '1px solid',
+                            transition: 'all 400ms'
+                        }}
+                    >
+                        Get In Touch
+                    </button>
+                </a>
             </div>
         </div>
     </div>

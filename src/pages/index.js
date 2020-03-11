@@ -48,10 +48,19 @@ export default ({ data }) => (
       params={{
         particles: {
           color: {
-          value: "#c8008c"
+          value: "#fff"
           },
           number: {
-              value: 75
+              value: 75,
+              density: {
+                enable: true,
+                value_area: 1200,
+              }
+          },
+          line_linked: {
+            distance: 125,
+            opacity: 0.2
+
           }
         }
         }}
@@ -63,7 +72,7 @@ export default ({ data }) => (
     <SEO title="Home" />
     <IndexHero />
     <div className="container blogroll">
-      <h2>Latest</h2>
+      <h2 style={{marginBottom: 50}}>Latest Writing</h2>
       <div className="row">
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div className="col-lg-4 col-md-6" key={node.id}>

@@ -14,6 +14,10 @@ const Cursor = () => {
             scale: 2,
             background: '#EADEDA',
         });
+        cursor.over('button', {
+            scale: 2,
+            background: '#EADEDA',
+        });
         return () => cursor.remove();
     }, []);
     return null;

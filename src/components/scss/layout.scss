@@ -44,8 +44,15 @@ header a {
   text-decoration: none;
 }
 
-a {
+a, button {
   cursor: none;
+}
+
+button:hover {
+  background-color: $brand !important;
+  color: white !important;
+  border-color: $brand !important;
+  transition: all 400ms ease-in-out;
 }
 
 .blogroll {
