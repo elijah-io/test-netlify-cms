@@ -47,7 +47,7 @@ export default ({ data }) => (
     <IndexHero />
     <div className="container blogroll">
       <h2 style={{marginBottom: 50}}>Latest Writing</h2>
-      <div className="row">
+      <div className="row" style={{marginBottom: '10vw'}}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div className="col-lg-4 col-md-6" key={node.id}>
             <AniLink cover to={node.frontmatter.path} direction="left" bg="#EE4E31" duration={0.50}>
