@@ -20,18 +20,18 @@ body {
   font-size: 1.05rem;
 }
 
-header, main, footer {
-  animation: fadein 2s;
-}
+// header, main, footer {
+//   animation: fadein 2s;
+// }
 
-@keyframes fadein {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
+// @keyframes fadein {
+//   0% {
+//       opacity: 0;
+//   }
+//   100% {
+//       opacity: 1;
+//   }
+// }
 
 figure {
   margin: 0;
