@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import moment from "moment/moment"
 // import Helmet from 'react-helmet';
-import Layout from "../components/layout.js"
+import Layout from "../components/post-layout"
 import Helmet from "react-helmet"
 
 export default function Template({ data }) {

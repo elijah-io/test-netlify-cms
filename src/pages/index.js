@@ -3,11 +3,10 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 // import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/page-layout"
 import SEO from "../components/seo"
 import IndexHero from "../components/hero"
 
-import Particles from "react-particles-js";
 // import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 // https://transitionlink.tylerbarnes.ca/docs/anilink/
@@ -44,31 +43,6 @@ export const query = graphql`
 
 export default ({ data }) => (
   <Layout>
-    <Particles
-      params={{
-        particles: {
-          color: {
-          value: "#fff"
-          },
-          number: {
-              value: 75,
-              density: {
-                enable: true,
-                value_area: 1200,
-              }
-          },
-          line_linked: {
-            distance: 125,
-            opacity: 0.2
-
-          }
-        }
-        }}
-        style={{
-          position: 'fixed',
-          zIndex: 0,
-        }}
-    />
     <SEO title="Home" />
     <IndexHero />
     <div className="container blogroll">
