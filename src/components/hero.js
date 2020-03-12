@@ -19,7 +19,7 @@ const IndexHero = () => (
                 high-quality websites and immersive digital experiences.
                 </p>
                 <a href="mailto:hi@elijah.io">
-                    <div data-sal="slide-up" data-sal-delay="1000" data-sal-easing="ease-in-out">
+                    <span data-sal="slide-up" data-sal-delay="1000" data-sal-easing="ease-in-out">
                     <button
                         className="special"
                         style={{
@@ -35,7 +35,7 @@ const IndexHero = () => (
                     >
                         Get In Touch
                     </button>
-                    </div>
+                    </span>
                 </a>
             </div>
         </div>
