@@ -5,9 +5,8 @@ import React from "react"
 import "./scss/layout.scss"
 
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-// import Burger from '@animated-burgers/burger-squeeze' 
-// import '@animated-burgers/burger-squeeze/dist/styles.css' 
-// import '@animated-burgers/burger/styles.scss' 
+
+import { FaEnvelope } from 'react-icons/fa';
 
 import Logo from "./logo"
 
@@ -15,24 +14,24 @@ const Header = ({ siteTitle }) => (
   <header
   style={{
     marginTop: 25,
-    marginBottom: 25,
+    marginBottom: 20,
   }}>
     <div className="container" >
       <div className="row">
-        <div className="col-9">
+        <div className="col-9 my-auto">
           <AniLink cover to={`/`} direction="right" bg="#EE4E31" duration={0.50}>
             <Logo />
           </AniLink>
         </div>
         <div className="col-3 my-auto desktop-menu">
           <div style={{textAlign: 'right'}}>
-            <AniLink cover to={`/`} direction="left" bg="#EE4E31" duration={0.50}>Testing</AniLink>
+            {/* <AniLink cover to={`/`} direction="left" bg="#EE4E31" duration={0.50}>Testing</AniLink> */}
+            <a href="mailto:hi@elijah.io"><p><FaEnvelope style={{verticalAlign: 'text-bottom', marginBottom: 4, fontSize: 14}}/> hi@elijah.io</p></a>
           </div>
         </div>
         <div className="col-3 my-auto mobile-menu">
-          <div style={{textAlign: 'right', marginTop: '-13px'}}>
-            {/* <Link to="/" style={{fontSize: 40}}></Link> */}
-            {/* <Burger Component="button" type="button" /> */}
+          <div style={{textAlign: 'right'}}>
+            <a href="mailto:hi@elijah.io"><p><FaEnvelope style={{fontSize: 24}}/></p></a>
           </div>
         </div>
       </div>
