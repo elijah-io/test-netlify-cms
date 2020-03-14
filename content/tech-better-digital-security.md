@@ -55,4 +55,4 @@ After that, create an account on [ProtonMail](https://protonmail.com/) to easily
 
 Okay, I get it—maybe not all of you need “this much” digital security—your OpSec game is as strong as needed for protecting your cat photos and meme library. But if you could increase your security by factors of ten, while, at worst, encountering nominal inconvenience, wouldn’t you?
 
-Let me know by emailing me directly at [elijah@eyi.io](mailto:elijah@eyi.io) or tweeting at me [@elijah_io](https://twitter.com/elijah_io)—thanks for reading!
+*Originally posted on [Medium](https://medium.com/eyi-io/security-2017-73c1bffaf7a5) for [Evolve Your Identity](https://evolveyouridentity.com).*
