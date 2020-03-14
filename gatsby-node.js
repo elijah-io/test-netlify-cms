@@ -19,8 +19,6 @@ exports.createPages = ({actions, graphql}) => {
                         featuredImage {
                             childImageSharp {
                                 fluid(maxWidth: 2400) {
-                                    src
-                                    srcWebp
                                     base64
                                     tracedSVG
                                     srcWebp
