@@ -3,9 +3,10 @@ title: 3 Steps for Better Digital Security in 2017
 category: Technology
 path: /tech/better-digital-security
 date: 2017-05-07T17:00:00.000Z
-excerpt: Last year’s digital security mishaps brought privacy to the forefront of our
-  attention. Some of the most notable digital security unravellings
-  could have been mitigated by following basic privacy practices.
+excerpt: >-
+  Last year’s digital security mishaps brought privacy to the forefront of our
+  attention. Some of the most notable digital security unravellings could have
+  been mitigated by following basic privacy practices.
 featuredImage: /img/cyberspace.jpg
 ---
 Last year’s digital security mishaps brought privacy to the forefront of our attention. Ironically, some of the most notable digital security unravellings of 2016 could have been mitigated by following basic privacy practices.
@@ -34,6 +35,8 @@ Yes, activating 2FA on your accounts will mean that you are entering essentially
 
 I prefer [LastPass](https://www.lastpass.com/2), but there are a plethora of other personal and enterprise-ready password managers out there; most have a free version. Essentially, a password manager does exactly what the name would imply—it helps manage all the different passwords you may have across various social platforms, forums, and even sensitive accounts like online banking portals.
 
+![LastPass](https://miro.medium.com/max/5068/1*NWjW0M3H-Nz_x0jS-F686g.jpeg "LastPass")
+
 Some software, like LastPass, will even filter through all of your account information to look for security weaknesses (shown above). This makes it extraordinarily easy for the average user to set one universal password, while maintaining a diverse set of unique passwords for each account—and the best part is you never have to remember more than one password again.
 
 ## 3.Encrypt Your Online Communication
@@ -41,6 +44,8 @@ Some software, like LastPass, will even filter through all of your account infor
 *You don’t have to be a [cypherpunk](https://en.wikipedia.org/wiki/Cypherpunk) to use Signal and encrypted email.*
 
 I think most people would be surprised at how accessible strong encryption can be. I would be willing to bet the word “encryption” scares away a good chunk of people from even trying—it sounds complex.
+
+![ProtonMail](https://miro.medium.com/max/2508/1*s96oH4bdhv7RNrqkE_VHcA.jpeg "ProtonMail")
 
 *Encryption is for everyone now.*
 
