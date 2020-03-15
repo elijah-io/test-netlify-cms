@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Elijah Kleinsmith`,
+    description: `Elijah specializes in building and supporting exceptional, high-quality websites and immersive digital experiences.`,
     url: `https://testgatsbycms.netlify.com`,
-    author: `@gatsbyjs`,
-    image: `https://www.oxy.edu/sites/default/files/landing-page/banner-images/art-art-history_main_1440x800.jpg`
+    author: `@elijah-io`,
+    image: `https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share-v3.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -75,10 +75,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#04151F`,
+        theme_color: `#EE4E31`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/elijah-favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

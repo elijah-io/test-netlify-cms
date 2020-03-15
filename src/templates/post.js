@@ -10,7 +10,7 @@ export default function Template({ data }) {
   const { site: global } = data
   return (
     <Layout>
-      <Helmet title={`${post.frontmatter.title} – Elijah Kleinsmith`}>
+      <Helmet title={`${post.frontmatter.title} | Elijah Kleinsmith`}>
         <meta property="og:url" content={`${global.siteMetadata.url}${post.frontmatter.path}`} />
         <meta property="og:type" content="website" />
         <meta name="description" content={post.frontmatter.excerpt} />
