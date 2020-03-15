@@ -45,15 +45,15 @@ Some software, like LastPass, will even filter through all of your account infor
 
 ###### *You don’t have to be a [cypherpunk](https://en.wikipedia.org/wiki/Cypherpunk) to use Signal and encrypted email.*
 
-I think most people would be surprised at how accessible strong encryption can be. I would be willing to bet the word “encryption” scares away a good chunk of people from even trying—it sounds complex. But the reality is, encryption is for everyone now.
+I think most people would be surprised at how accessible strong encryption can be. I would be willing to bet the word “encryption” scares away a good chunk of people from even trying—it sounds complex.
 
-![ProtonMail](https://miro.medium.com/max/2508/1*s96oH4bdhv7RNrqkE_VHcA.jpeg "ProtonMail")
+> Encryption is for everyone now.
 
-> *Encryption is for everyone now.*
-
-Why not get setup with professional-grade encrypted instant messaging and email right now? Download the [ultra-secure Signal](https://www.cyberscoop.com/signal-security-audit-encryption-facebook-messenger-whatsapp/), for [Android](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=en) or [iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8), then have your friends download it; you can even share photos and video securely.
+Why not get setup with professional-grade encrypted instant messaging and email right now? Download the [ultra-secure Signal](https://www.cyberscoop.com/signal-security-audit-encryption-facebook-messenger-whatsapp/), for [Android](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=en) or [iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8), then have your friends download it; encryption is for everyone now. You can even share photos and video securely.
 
 After that, create an account on [ProtonMail](https://protonmail.com/) to easily encrypt your email for free. It is just as easy as Gmail to setup, but leaps and bounds more secure. Your inbox will be encrypted by default, while your messages have an option to be encrypted with a password. The message can be sent to any email address, including non-ProtonMail accounts, and the password can be communicated using a separate secure channel like Signal (or courier bird). The photo above shows what receiving an encrypted message from ProtonMail looks like—your message even has an expiration date for added security.
+
+![ProtonMail](https://miro.medium.com/max/2508/1*s96oH4bdhv7RNrqkE_VHcA.jpeg "ProtonMail")
 
 Okay, I get it—maybe not all of you need “this much” digital security—your OpSec game is as strong as needed for protecting your cat photos and meme library. But if you could increase your security by factors of ten, while, at worst, encountering nominal inconvenience, wouldn’t you?
 
