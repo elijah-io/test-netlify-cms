@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import moment from "moment/moment"
-// import Helmet from 'react-helmet';
-import Layout from "../components/post-layout"
+import Layout from "../components/layout"
 import Helmet from "react-helmet"
+import { FaRegCalendar, FaRegClock } from 'react-icons/fa';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -22,7 +22,7 @@ export default function Template({ data }) {
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta name="twitter:card" contet="summary_large_image" />
       </Helmet>
-      <div className="post">
+      <div className="post" style={{background: '#04151F', borderBottom: 'solid 5px #EE4E31'}}>
         <div
           style={{
             background: `linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(${post.frontmatter.featuredImage.childImageSharp.fluid.src})`,
@@ -37,10 +37,6 @@ export default function Template({ data }) {
                   dangerouslySetInnerHTML={{ __html: post.frontmatter.title }}
                   style={{ margin: 0, textAlign: "center" }}
                 />
-                <p style={{ textAlign: "center" }}>
-                  Posted on{" "}
-                  {moment(post.frontmatter.date).format("MMMM D, YYYY")}
-                </p>
               </div>
             </div>
           </div>
@@ -48,18 +44,23 @@ export default function Template({ data }) {
         <div
           className="container"
           style={{
-            marginTop: "5vh",
-            marginBottom: "5vh",
+            paddingTop: "5vh",
+            paddingBottom: "5vh"
           }}
         >
           <div className="row">
             <div className="col-12" style={{ maxWidth: 650, margin: "0 auto" }}>
+              <p style={{lineHeight: 1.1}}>
+                <small>
+                  <FaRegCalendar style={{fontSize: 11}}/> Published{" "} {moment(post.frontmatter.date).format("MMMM D, YYYY")}<br />
+                  <FaRegClock style={{fontSize: 11}}/> {post.timeToRead} Minute Read  
+                </small>
+              </p>
               <div
                 dangerouslySetInnerHTML={{ __html: post.html }}
                 style={{
                   lineHeight: 1.5,
-                  marginLeft: 15,
-                  marginRight: 15,
+                  fontSize: 20,
                 }}
               />
             </div>

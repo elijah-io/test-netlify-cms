@@ -24,7 +24,7 @@ const IndexHero = () => (
                 <a href="mailto:hi@elijah.io">
                     <span data-sal="slide-up" data-sal-delay="1000" data-sal-easing="ease-in-out">
                     <button
-                        className="special"
+                        className="special get-in-touch"
                         style={{
                             padding: '12px 30px',
                             fontSize: 14,

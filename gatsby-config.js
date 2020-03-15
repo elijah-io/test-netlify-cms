@@ -34,6 +34,13 @@ module.exports = {
                     maxWidth: 1200,
                 },
             },
+            {
+              resolve: `gatsby-remark-external-links`,
+              options: {
+                target: "_blank",
+                rel: "nofollow noopener"
+              }
+            },
           ],
       },
     },
@@ -57,7 +64,7 @@ module.exports = {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
         color: '#EE4E31',
-        height: '3px',
+        height: '5px',
         paths: ['/politics/*', '/tech/*'],
         zIndex: `2`,
       },
