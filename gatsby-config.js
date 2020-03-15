@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Elijah Kleinsmith`,
     description: `Elijah specializes in building and supporting exceptional, high-quality websites and immersive digital experiences.`,
-    url: `https://testgatsbycms.netlify.com`,
+    url: `https://elijah.io`,
     author: `@elijah-io`,
     image: `https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share-v3.jpg`
   },

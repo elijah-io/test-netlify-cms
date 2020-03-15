@@ -53,7 +53,7 @@ export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Helmet>
-      <meta property="og:url" content="https://testgatsbycms.netlify.com/" />
+      <meta property="og:url" content="https://elijah.io" />
       <meta property="og:type" content="website" />
       <meta name="description" content="Elijah specializes in building and supporting exceptional, high-quality websites and immersive digital experiences." />
       <meta property="og:image" content="https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share-v3.jpg" />
