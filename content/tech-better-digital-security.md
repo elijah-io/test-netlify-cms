@@ -51,9 +51,11 @@ I think most people would be surprised at how accessible strong encryption can b
 
 Why not get setup with professional-grade encrypted instant messaging and email right now? Download the [ultra-secure Signal](https://www.cyberscoop.com/signal-security-audit-encryption-facebook-messenger-whatsapp/), for [Android](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=en) or [iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8), then have your friends download it; encryption is for everyone now. You can even share photos and video securely.
 
-After that, create an account on [ProtonMail](https://protonmail.com/) to easily encrypt your email for free. It is just as easy as Gmail to setup, but leaps and bounds more secure. Your inbox will be encrypted by default, while your messages have an option to be encrypted with a password. The message can be sent to any email address, including non-ProtonMail accounts, and the password can be communicated using a separate secure channel like Signal (or courier bird). The photo above shows what receiving an encrypted message from ProtonMail looks like—your message even has an expiration date for added security.
+After that, create an account on [ProtonMail](https://protonmail.com/) to easily encrypt your email for free. It is just as easy as Gmail to setup, but leaps and bounds more secure. Your inbox will be encrypted by default, while your messages have an option to be encrypted with a password.
 
 ![ProtonMail](https://miro.medium.com/max/2508/1*s96oH4bdhv7RNrqkE_VHcA.jpeg "ProtonMail")
+
+The message can be sent to any email address, including non-ProtonMail accounts, and the password can be communicated using a separate secure channel like Signal (or courier bird). The photo above shows what receiving an encrypted message from ProtonMail looks like—your message even has an expiration date for added security.
 
 Okay, I get it—maybe not all of you need “this much” digital security—your OpSec game is as strong as needed for protecting your cat photos and meme library. But if you could increase your security by factors of ten, while, at worst, encountering nominal inconvenience, wouldn’t you?
 
