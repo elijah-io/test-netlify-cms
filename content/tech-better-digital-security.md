@@ -17,7 +17,7 @@ At [Evolve](https://evolveyouridentity.com/), most of my normal work is as far a
 
 ## 1. Use 2-Factor Authentication
 
-*Mitigate brute-force attempts on your password authentication.*
+###### *Mitigate brute-force attempts on your password authentication.*
 
 Just about every major platform—from social platforms like Facebook and Twitter to business services like cloud hosting providers and distributed network solutions—provide some variation of 2-factor authentication (2FA).
 
@@ -31,7 +31,7 @@ Yes, activating 2FA on your accounts will mean that you are entering essentially
 
 ## 2. Use a Reputable Password Manager
 
-*Increase security and convenience for yourself and your business.*
+###### *Increase security and convenience for yourself and your business.*
 
 I prefer [LastPass](https://www.lastpass.com/2), but there are a plethora of other personal and enterprise-ready password managers out there; most have a free version. Essentially, a password manager does exactly what the name would imply—it helps manage all the different passwords you may have across various social platforms, forums, and even sensitive accounts like online banking portals.
 
@@ -41,7 +41,7 @@ Some software, like LastPass, will even filter through all of your account infor
 
 ## 3.Encrypt Your Online Communication
 
-*You don’t have to be a [cypherpunk](https://en.wikipedia.org/wiki/Cypherpunk) to use Signal and encrypted email.*
+###### *You don’t have to be a [cypherpunk](https://en.wikipedia.org/wiki/Cypherpunk) to use Signal and encrypted email.*
 
 I think most people would be surprised at how accessible strong encryption can be. I would be willing to bet the word “encryption” scares away a good chunk of people from even trying—it sounds complex.
 
