@@ -90,7 +90,6 @@ export const postQuery = graphql`
               srcWebp
               presentationWidth
               presentationHeight
-              base64
               srcSetWebp
               originalImg
               originalName

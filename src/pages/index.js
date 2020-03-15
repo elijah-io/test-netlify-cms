@@ -29,7 +29,6 @@ export const query = graphql`
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 2400) {
-                  base64
                   srcWebp
                   srcSetWebp
                   originalImg
