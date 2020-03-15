@@ -55,13 +55,13 @@ export default ({ data }) => (
     <Helmet>
       <meta property="og:url" content="https://testgatsbycms.netlify.com/" />
       <meta property="og:type" content="website" />
-      <meta name="description" content="I'm a digital producer living and working in Kansas City, MO specializing in building and supporting exceptional, high-quality websites and immersive digital experiences." />
-      <meta property="og:image" content="https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share.jpg" />
+      <meta name="description" content="Elijah specializes in building and supporting exceptional, high-quality websites and immersive digital experiences." />
+      <meta property="og:image" content="https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share-v2.jpg" />
       <meta property="og:image:height" content="1200" />
       <meta property="og:image:width" content="630" />
-      <meta property="og:title" content="Elijah Kleinsmith – Digtal Producer in Kansas City" />
-      <meta property="og:description" content="I'm a digital producer living and working in Kansas City, MO specializing in building and supporting exceptional, high-quality websites and immersive digital experiences." />
-      <meta name="twitter:title" content="Elijah Kleinsmith – Digtal Producer in Kansas City" />
+      <meta property="og:title" content="Elijah Kleinsmith – Digital Producer in Kansas City" />
+      <meta property="og:description" content="Elijah specializes in building and supporting exceptional, high-quality websites and immersive digital experiences." />
+      <meta name="twitter:title" content="Elijah Kleinsmith – Digital Producer in Kansas City" />
       <meta name="twitter:card" contet="summary_large_image" />
     </Helmet>
     <IndexHero />
