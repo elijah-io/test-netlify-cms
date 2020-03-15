@@ -25,7 +25,7 @@ If this is your first time hearing about 2FA, here’s the down-n-dirty: when yo
 
 ![YubiKey](https://miro.medium.com/max/1708/1*zWECJBglBUjTHe_N-aXuwQ.gif "YubiKey")
 
-My current go-to for 2FA is a [YubiKey OTP](https://www.yubico.com/products/services-software/personalization-tools/yubikey-otp/) setup.
+##### My current go-to for 2FA is a [YubiKey OTP](https://www.yubico.com/products/services-software/personalization-tools/yubikey-otp/) setup.
 
 Yes, activating 2FA on your accounts will mean that you are entering essentially double the number of passwords to access your account; digital security and convenience are not necessarily mutually exclusive, but they are often at odds with one-another, trading-off as you scale one or the other. My next suggestion, however, will increase both security and convenience.
 
@@ -37,17 +37,19 @@ I prefer [LastPass](https://www.lastpass.com/2), but there are a plethora of oth
 
 ![LastPass](https://miro.medium.com/max/5068/1*NWjW0M3H-Nz_x0jS-F686g.jpeg "LastPass")
 
+##### My LastPass ‘Security Challenge’ score, as of April 30, 2017.
+
 Some software, like LastPass, will even filter through all of your account information to look for security weaknesses (shown above). This makes it extraordinarily easy for the average user to set one universal password, while maintaining a diverse set of unique passwords for each account—and the best part is you never have to remember more than one password again.
 
 ## 3.Encrypt Your Online Communication
 
 ###### *You don’t have to be a [cypherpunk](https://en.wikipedia.org/wiki/Cypherpunk) to use Signal and encrypted email.*
 
-I think most people would be surprised at how accessible strong encryption can be. I would be willing to bet the word “encryption” scares away a good chunk of people from even trying—it sounds complex.
+I think most people would be surprised at how accessible strong encryption can be. I would be willing to bet the word “encryption” scares away a good chunk of people from even trying—it sounds complex. But the reality is, encryption is for everyone now.
 
 ![ProtonMail](https://miro.medium.com/max/2508/1*s96oH4bdhv7RNrqkE_VHcA.jpeg "ProtonMail")
 
-*Encryption is for everyone now.*
+> *Encryption is for everyone now.*
 
 Why not get setup with professional-grade encrypted instant messaging and email right now? Download the [ultra-secure Signal](https://www.cyberscoop.com/signal-security-audit-encryption-facebook-messenger-whatsapp/), for [Android](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=en) or [iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8), then have your friends download it; you can even share photos and video securely.
 
