@@ -56,7 +56,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://testgatsbycms.netlify.com/" />
       <meta property="og:type" content="website" />
       <meta name="description" content="Elijah specializes in building and supporting exceptional, high-quality websites and immersive digital experiences." />
-      <meta property="og:image" content="https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share-v2.jpg" />
+      <meta property="og:image" content="https://elijah-io.s3.us-east-2.amazonaws.com/elijah-social-share-v3.jpg" />
       <meta property="og:image:height" content="1200" />
       <meta property="og:image:width" content="630" />
       <meta property="og:title" content="Elijah Kleinsmith – Digital Producer in Kansas City" />
