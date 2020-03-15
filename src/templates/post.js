@@ -91,7 +91,6 @@ export const postQuery = graphql`
               presentationWidth
               presentationHeight
               base64
-              tracedSVG
               srcSetWebp
               originalImg
               originalName
