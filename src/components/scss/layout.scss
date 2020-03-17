@@ -10,12 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   cursor: none;
-  opacity: 0;
-  &.wf-active,
-  &.wf-inactive {
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
-  }
 }
 
 body {
