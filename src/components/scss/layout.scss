@@ -10,6 +10,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   cursor: none;
+  &.wf-loading * {
+    opacity: 0;
+  }
+  &.wf-active *,
+  &.wf-inactive * {
+    transition: opacity 0.5s ease-out;
+  }
 }
 
 body {
@@ -18,10 +25,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $dark;
   font-size: 1.05rem;
-}
-
-html.wf-loading {
-  opacity: 0;
 }
 
 // header, main, footer {
