@@ -9,6 +9,7 @@ import Footer from "./footer"
 import 'bootstrap/dist/css/bootstrap-grid.css'
 import Particles from "react-particles-js";
 import "./scss/layout.scss"
+import Helmet from "react-helmet"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -23,6 +24,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="stylesheet" href="https://use.typekit.net/pgi1lzk.css" async="false"></link>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" async="false"></link>
+      </Helmet>
       <Particles
         params={{
           particles: {

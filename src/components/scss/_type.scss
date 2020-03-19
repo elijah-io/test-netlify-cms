@@ -2,7 +2,7 @@
 
 $sans: "San Francisco", "halyard-display", "Helvetica Neue", "Lucida Grande", serif; // 400 Regular + Italic & 700 Bold + Italic
 $display: "miller-display", serif; // 300 Roman + Italic
-$special: "SF Mono", "Source Code Pro", sans-serif;
+$special: "SF Mono", "Source Code Pro", monospace;
 
 .sans {
   font-family: $sans;

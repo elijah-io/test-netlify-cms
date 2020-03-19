@@ -48,17 +48,17 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        typekit: {
-          id: 'pgi1lzk'
-        },
-        google: {
-          families: ['Source Code Pro']
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     typekit: {
+    //       id: 'pgi1lzk'
+    //     },
+    //     google: {
+    //       families: ['Source Code Pro']
+    //     }
+    //   }
+    // },
     // `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-scroll-indicator`,
